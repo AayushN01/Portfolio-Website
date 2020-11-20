@@ -482,3 +482,56 @@ body{
 	text-align: justify;
 	padding-bottom: 30px;
 }
+
+/*Service section Styles*/
+.service .container{
+	padding-bottom: 40px;
+}
+.service .service-item{
+	/*background-color: red;*/
+	-ms-flex: 0 0 33.33%;
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	margin-bottom: 30px;
+	display: -ms-flexbox;
+	display: flex;
+}	
+.service .service-item .service-item-inner{
+	background-color: #b2d8b91a;
+	border: 1px solid #55d86d54;
+	border-radius: 10px;
+	padding: 30px 15px;
+	text-align: center;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	
+}
+.service .service-item .service-item-inner:hover{
+	padding: 35px 20px;
+}
+.service .service-item .service-item-inner .icon{
+	height: 60px;
+	width: 60px;
+	/*background-color: crimson;*/
+	display: block;
+	margin: 0 auto 30px;
+	text-align: center;
+	border-radius: 50%;
+}
+.service .service-item .service-item-inner .icon .fa{
+	font-size: 40px;
+	line-height: 60px;
+	color: #55d86d;
+}
+.service .service-item .service-item-inner .icon .fa:hover{
+	font-size: 50px;
+}
+.service .service-item .service-item-inner h4{
+	font-size: 18px;
+	margin-bottom: 15px;
+	font-weight: 800;
+}
+.service .service-item .service-item-inner p{
+	font-size: 16px;
+	line-height: 20px;
+}
