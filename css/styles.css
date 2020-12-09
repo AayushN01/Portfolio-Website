@@ -794,3 +794,93 @@ body{
 	color: white;
 	line-height: 40px;
 }
+/*BLOG Section styles*/
+.blog .container{
+	padding-bottom:  40px;
+}
+.blog .blog-item{
+	/*background-color: red;*/
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	margin-bottom: 30px;
+	font-family: "Josefin Sans", sans-serif;
+}
+.blog .blog-item-inner{
+	border-radius: 10px;
+	overflow: hidden;
+	border: 1px solid #d4d4e3;
+}
+.blog .blog-item-inner .blog-img{
+	position: relative;
+	overflow: hidden;
+}
+.blog .blog-item-inner .blog-img img{
+	width: 100%;
+	display: block;	
+	height: 250px;
+	border: 1px solid;
+	-webkit-transition: all 0.5s ease;
+	transition:  all 0.5s ease;
+}
+.blog .blog-item-inner:hover .blog-img img{
+	-webkit-transform: scale(1.1);
+	transform:  scale(1.1);
+}
+.blog .blog-item-inner .blog-img .blog-date{
+	position: absolute;
+	padding: 4px 10px;
+	border-radius: 3px;
+	background-color: #ca405a2b;
+	font-size: 16px;
+	left: 15px;
+	bottom: 15px;
+	color: white;
+}
+.blog .blog-item-inner .blog-info{
+	padding: 30px 15px;
+	background-color: #fdf9ff;
+}
+.blog .blog-item-inner .blog-info .blog-title{
+	font-size: 18px;
+	font-weight: 700;
+}
+.blog .blog-item-inner .blog-info .blog-description{
+	font-size: 16px;
+	line-height: 25px;
+	color: #504e70;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.blog .blog-item-inner .blog-info .blog-tags{
+	font-size: 16px;
+	line-height: 25px;
+	margin-bottom: 5px;
+}
+.blog .blog-item-inner .blog-info .blog-tags a{
+	text-decoration: none;
+	font-weight: 600;
+	background-color: #1b63637d
+	border-radius: 3px;
+	margin: 2px 2px 2px 2px;
+	font-size: 14px;
+}
+.blog .blog-item-inner .blog-info .blog-tags a:hover{
+	color: #7474ed;
+}
+.blog .blog-item-inner .blog-info .blog-source {
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	/*background-color: red;*/
+	margin-bottom: 5px;
+}
+.blog .blog-item-inner .blog-info .blog-source a{
+	color: #32d250;
+	font-size: 14px;
+	-webkit-transition: all 03s ease;
+	transition: all 0.3s ease;
+}
+.blog .blog-item-inner .blog-info .blog-source a:hover{
+	font-size: 16px;
+	color: crimson;
+}
