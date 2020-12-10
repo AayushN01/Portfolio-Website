@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 /*General styles*/
+html{
+	scroll-behavior: smooth;
+}
 body{
 	margin:0;
 	line-height: 1.5;
@@ -107,12 +110,14 @@ body{
 	transition: all 0.3s ease;
 	display: inline-block;
 	white-space: nowrap;
+	cursor: pointer;
 }
 .btn:hover{
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+	-webkit-transform: scale(1);
+	transform: scale(1);
 	background-color: red;
 	color: white;
+	font-size: 18px;
 }
 /*Aside styles*/
 .aside{
@@ -529,6 +534,7 @@ body{
 }
 .service .service-item .service-item-inner .icon .fa:hover{
 	font-size: 50px;
+	color: red;
 }
 .service .service-item .service-item-inner h4{
 	font-size: 18px;
@@ -800,6 +806,7 @@ body{
 }
 .blog .blog-item{
 	/*background-color: red;*/
+	-ms-flex: 0 0 33.33%;
 	flex: 0 0 33.33%;
 	max-width: 33.33%;
 	margin-bottom: 30px;
@@ -883,4 +890,133 @@ body{
 .blog .blog-item-inner .blog-info .blog-source a:hover{
 	font-size: 16px;
 	color: crimson;
+}
+/*Contact syles*/
+.contact .contact-info-item{
+	font-family: "Josefin Sans", sans-serif;
+	/*background-color: red;*/
+	-ms-flex: 0 0 33.33%;
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	text-align: center;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	margin-bottom: 40px;
+}
+.contact .contact-info-item:hover{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.contact .contact-info-item .icon{
+	display: inline-block;
+}
+.contact .contact-info-item .icon .fa{
+	font-size: 40px;
+	color: #23d945;
+}
+.contact .contact-info-item .icon .fa:hover{
+	color: red;
+}
+.contact .contact-info-item h4{
+	font-size: 20px;
+	font-weight: 800;
+	margin: 15px 0 5px 0;
+}
+.contact .contact-info-item p{
+	font-size: 18px;
+	line-height: 25px;
+	margin: 0;
+	font-weight: 400;
+}
+.contact .contact-form{
+	/*background-color: red;*/
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+.contact .contact-form .col-6{
+	/*background-color: red;*/
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+.contact .contact-form .col-12{
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+.contact .contact-form .form-item {
+	margin-bottom: 10px;
+}
+.contact .contact-form .form-item .form-control{
+	width: 100%;
+	height: 40px;
+	border-radius: 10px;
+	border: 1px solid #55d86d57;
+	font-size: 16px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.contact .contact-form .form-item .form-control:focus{
+	-webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+	box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.contact .contact-form .form-item textarea.form-control{
+	height: 140px;
+}
+.contact .contact-form .btn{
+	height: 50px;
+	padding: 0 50px;
+}
+
+/*Responsive Queries*/
+@media (max-width: 1197px){
+	.aside{
+		left: -270px;
+	}
+	.main-content{
+		padding-left: 0;
+	}
+	.about .about-content .personal-info .info-item p span{
+		display: block;
+		margin-left: 0;
+	}
+}
+
+@media(max-width: 991px){
+	.about .about-content .skills .skill-item .skill-percent{
+		display: none;
+	}
+	.blog .blog-item,
+	.portfolio .portfolio-item,
+	.service .service-item{
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+@media (max-width: 767px){
+	.contact .contact-info-item .col-6,
+	.blog .blog-item,
+	.service .service-item,
+	.about .about-content .experience,
+	.about .about-content .education,
+	.about .about-content .skills,
+	.about .about-content .personal-info{
+		-ms-flex: 0 0 1000%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.portfolio .portfolio-filter button{
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 575px){
+	.contact .contact-info-item,
+	.blog .blog-item,
+	.portfolio .portfolio-item{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
 }
